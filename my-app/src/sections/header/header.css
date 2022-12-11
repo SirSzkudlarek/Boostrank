@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-wrapper {
+  background-color: rgb(198, 246, 108);
+  margin: 0;
+}
+
+h1 {
+  padding: .5rem 0;
+  margin: 0;
+  font-size: 3rem;
+  color: rgb(81, 220, 192);
+  text-align: center;
+}

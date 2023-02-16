@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import Header from './sections/header/header';
-import Footer from './sections/footer/footer';
+import Layout from './layouts/default';
+import Hero from './sections/hero/hero';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <Footer />
+    <Layout>
+      <Hero/>
+    </Layout>
   </React.StrictMode>
 );
 

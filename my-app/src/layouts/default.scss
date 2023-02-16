@@ -5,6 +5,8 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 8rem;
+  width: 1440px;
+  margin: 0 auto;
 
   @include mx.media(tablet-up) {
     gap: 14rem;

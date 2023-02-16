@@ -7,11 +7,12 @@ import "./default.scss"
 import Header from "../sections/header/header";
 import Footer from "../sections/footer/footer";
 
-function Layout() {
+function Layout(props) {
   return (
-    <div className={styles.wrapper}>
+    <div className="wrapper">
       <Header />
-      <main className={styles.main}>
+      <main className="main">
+        {props.children}
       </main>
       <Footer />
     </div>

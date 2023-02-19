@@ -1,12 +1,13 @@
 @use "src/styles/mixins" as mx;
+body {
+  background-color: grey;
+}
 
 .main {
   flex: 1;
   display: flex;
   flex-flow: column nowrap;
   gap: 8rem;
-  width: 1440px;
-  margin: 0 auto;
 
   @include mx.media(tablet-up) {
     gap: 14rem;

@@ -1,5 +1,8 @@
 import './header.scss';
-import { ReactComponent as IconPC } from './graphics/svg/pc-icon.svg';
+import iconPC from './graphics/png/icon-pc.png';
+import iconPS from './graphics/png/icon-ps.png';
+import iconXBOX from './graphics/png/icon-xbox.png';
+import iconNIN from './graphics/png/icon-nin.png';
 
 function Header() {
   return (
@@ -13,37 +16,47 @@ function Header() {
             <div className='pc-item'>
               <a className='link' href='#'>
                 <div className='icon'>
-                  <IconPC />
+                  <img src={iconPC} className='icon' alt="iconPC" />
                 </div>
                 <span className='text'>PC</span>
-                <div className='arrow-down'></div>
+                <span id="uparrow"></span>
               </a>
             </div>
 
             <div className='playstation-item'>
               <a className='link' href='#'>
-                <div className='icon'></div>
+                <div className='icon'>
+                  <img src={iconPS} className='icon' alt="iconPS" />
+                </div>
                 <span className='text'>Playstation</span>
-                <div className='arrow-down'></div>
+                <span id="uparrow"></span>
               </a>
             </div>
 
             <div className='xbox-item'>
               <a className='link' href='#'>
-                <div className='icon'></div>
+                <div className='icon'>
+                  <img src={iconXBOX} className='icon' alt="iconXBOX" />
+                </div>
                 <span className='text'>Xbox</span>
-                <div className='arrow-down'></div>
+                <span id="uparrow"></span>
               </a>
             </div>
 
             <div className='nintendo-item'>
               <a className='link' href='#'>
-                <div className='icon'></div>
+                <div className='icon'>
+                  <img src={iconNIN} className='icon' alt="iconNIN" />
+                </div>
                 <span className='text'>Nintendo</span>
-                <div className='arrow-down'></div>
+                <span id="uparrow"></span>
               </a>
             </div>
           </div>
+
+          <form className='menu-search'>
+            <input className='search-input'></input>
+          </form>
         </div>
       </nav>
     </div>

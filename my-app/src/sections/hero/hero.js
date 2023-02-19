@@ -1,5 +1,5 @@
 import './hero.scss';
-import HeaderImage from './graphics/heroArticleImage.jpg';
+
 
 function Hero() {
   return (

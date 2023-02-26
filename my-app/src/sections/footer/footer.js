@@ -5,10 +5,13 @@ function Footer() {
     <footer className='footer-wrapper'>
       <div className='footer-content'>
         <div className='links'>
-          <div className='logo-list'>
+          <div className='logo-wrapper'>
             <div className='logo'>
               <a href="#" title="Homepage" className='logo-br'>Boostrank</a>
             </div>
+          </div>
+
+          <div className='list-wrapper'>
             <ul className='list'>
               <li>
                 <a className='sublinks'>Polityka prywatności</a>
@@ -58,8 +61,20 @@ function Footer() {
               </a>
             </div>
           </div>
+
+          <div className='footer-hero-wrapper'>
+            <p className='hero-heading'>Join our <br/> socials!</p>
+          </div>
         </div>
-        <div className='information'></div>
+        <div className='information-copyright'>
+          <div className='copyright'>Copyright © 2023 Boostrank - All rights reserved</div>
+          
+          <div className='lng-currency'>
+            <div className='location-icon'></div>
+            <span className='language'> English </span>
+            <span className='currency'>PLN</span>
+          </div>
+        </div>
       </div>
     </footer>
   );

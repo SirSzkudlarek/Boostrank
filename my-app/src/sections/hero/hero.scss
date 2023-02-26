@@ -40,6 +40,10 @@ picture {
   flex-direction: column;
 }
 
+.game a:hover {
+  transform: scale(1.05);
+}
+
 .game-cover {
   padding-top: 57.4%;
   transition: .3s;

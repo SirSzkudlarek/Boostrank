@@ -1,13 +1,19 @@
+@use "src/styles/mixins" as mx;
+
 .header-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 7rem;
+  height: 8rem;
   width: 100%;
   background-color: black;
   color: #fff;
   padding: 2rem;
+
+  @include mx.media(mobile) {
+    padding: 5rem 2rem 2rem 2rem;
+  }
 }
 
 .title-wrapper {
@@ -15,6 +21,18 @@
   top: 0;
   left: 0;
   padding: 1rem;
+
+  @include mx.media(mobile) {
+    top: 0;
+    margin: auto;
+    left: 50%;
+    padding: 1rem 0;
+    transform: translateX(-50%);
+
+    h1 {
+      font-size: var(--font-size-xl);
+    }
+  }
 }
 
 h1 {
@@ -25,6 +43,10 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: 4rem;
+
+  @include mx.media(mobile) {
+    gap: 2rem;
+  }
 }
 
 .menu-items {
@@ -32,6 +54,10 @@ h1 {
   flex-direction: row;
   align-items: center;
   gap: 3rem;
+
+  @include mx.media(mobile) {
+    gap: 2rem;
+  }
 }
 
 .link {
@@ -43,6 +69,10 @@ h1 {
 .icon {
   width: 20px;
   height: auto;
+
+  @include mx.media(mobile) {
+    display: none;
+  }
 }
 
 #uparrow:before {
@@ -54,7 +84,7 @@ h1 {
 }
 
 #uparrow, #downarrow {
-  font-size: 15px;
+  font-size: 1.5rem;
   align-self: flex-start;
   color: #fff;
   display: inline-block;
@@ -64,22 +94,30 @@ h1 {
 }
 
 .search-input {
-  font-size: 17px;
+  font-size: 1.7rem;
   color: transparent;
-  border-radius: 80px;
+  border-radius: 8rem;
   height: 100%;
-  height: 33px;
-  width: 33px;
+  height: 3.3rem;
+  width: 3.3rem;
   background-color: #fff;
   background-image: url('./graphics/png/search.png');
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 1.6rem;
   background-position: 50%;
   outline: none;
+
+  @include mx.media(mobile) {
+    font-size: 1rem;
+  }
 }
 
 .text {
   color: #fff;
+
+  @include mx.media(mobile) {
+    font-size: 1.5rem;
+  }
 }
 
  

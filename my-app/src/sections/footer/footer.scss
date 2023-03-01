@@ -10,6 +10,10 @@
   color: #fff;
   padding: 1rem 0 2rem 0;
 
+  @include mx.media(tablet) {
+    padding: 1rem 1.5rem;
+  }
+
   @include mx.media(mobile) {
     padding: 1rem 1.5rem;
   }
@@ -40,6 +44,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
+
+  @include mx.media(tablet) {
+    display: none;
+  }
 
   @include mx.media(mobile) {
     display: none;

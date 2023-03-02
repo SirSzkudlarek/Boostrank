@@ -5,8 +5,8 @@
     @media (max-width: 768px) { @content; }
   } @else if $size == tablet-up {
     @media (min-width: 769px) { @content; }
-  } @else if $size == laptop-up {
-    @media (min-width: 1024px) { @content; }
+  } @else if $size == laptop {
+    @media (max-width: 1024px) { @content; }
   } @else if $size == desktop-up {
     @media (min-width: 1200px) { @content; }
   } @else if $size == container-up {

@@ -33,6 +33,11 @@
   margin-bottom: 3rem;
   border-bottom: 1px solid rgb(46, 43, 43);
 
+  @include mx.media(laptop) {
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
   @include mx.media(mobile) {
     flex-direction: column;
     margin-bottom: 1rem;
@@ -45,7 +50,7 @@
   align-items: center;
   padding-bottom: 1rem;
 
-  @include mx.media(tablet) {
+  @include mx.media(laptop) {
     display: none;
   }
 
@@ -86,6 +91,15 @@
   display: flex;
   align-items: center;
 
+  @include mx.media(laptop) {
+    padding: .5rem;
+    font-size: 1.8rem;
+  }
+
+  @include mx.media(tablet) {
+    font-size: 1.5rem;
+  }
+
   @include mx.media(mobile) {
     padding: .5rem;
     font-size: 1.5rem;
@@ -110,6 +124,16 @@
   grid-gap: 1rem;
   margin: -0.7rem;
   justify-content: flex-end;
+
+  @include mx.media(laptop) {
+    transform: scale(.9);
+    grid-gap: .5rem;
+  }
+
+  @include mx.media(tablet) {
+    transform: scale(.8);
+    grid-gap: .5rem;
+  }
 
   @include mx.media(mobile) {
     transform: scale(.7);
@@ -218,6 +242,16 @@
   width: 50rem;
   position: relative;
 
+  @include mx.media(laptop) {
+    width: 40rem;
+    height: 21rem;
+  }
+
+  @include mx.media(tablet) {
+    width: 35rem;
+    height: 21rem;
+  }
+
   @include mx.media(mobile) {
     width: auto;
     height: 15rem;
@@ -232,8 +266,19 @@
   font-size: 3rem;
   font-family: 'Sawarabi Mincho', serif;
 
-  @include mx.media(mobile) {
+  @include mx.media(laptop) {
+    padding: 3rem 0 0 3rem;
     font-size: 2.5rem;
+  }
+
+  @include mx.media(tablet) {
+    padding: 2rem 0 0 1rem;
+    font-size: 2.5rem;
+  }
+
+  @include mx.media(mobile) {
+    padding: 2rem 0 0 7rem;
+    font-size: 2rem;
   }
 }
 

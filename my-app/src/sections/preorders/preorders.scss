@@ -1,0 +1,220 @@
+@use "src/styles/mixins" as mx;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  color: #fff;
+}
+
+picture {
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-wrapper-bestseller {
+  max-width: 120rem;
+  width: 100%;
+  margin: 3rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  @include mx.media(laptop) {
+    margin: 0 0 2rem 0;
+    gap: 2rem;
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 120rem;
+  align-self: center;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+
+  h2 {
+    font-size: 2.7rem;
+    font-weight: 700;
+  }
+
+  @include mx.media(desktop) {
+    padding: 0 4rem;
+  }
+
+  @include mx.media(laptop) {
+    margin: 2rem 0;
+    gap: 2rem;
+
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+
+  @include mx.media(tablet) {
+    padding: 0 1rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.button {
+  font-size: 1.5rem;
+  height: 4rem;
+  padding: 0 1.5rem;
+  background-color: rgb(175, 19, 19);
+  border-radius: 3.5rem;
+  z-index: 1;
+  white-space: nowrap;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: .2s;
+  border: .2rem solid rgb(215, 106, 42);
+  cursor: pointer;
+  text-align: center;
+
+  @include mx.media(tablet) {
+    padding: 1rem;
+    height: 3.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+.games-container {
+  margin: 0;
+  padding: -1.5rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  @include mx.media(laptop) {
+    display: none;
+  }
+}
+
+.splide-wrapper {
+  @include mx.media(laptop-up) {
+    display: none;
+  }
+}
+
+.game {
+  margin: 1.5rem;
+  width: calc(33.33333% - 3rem);
+  z-index: 1;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include mx.media(laptop) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    display: block;
+  }
+}
+
+.game a:hover {
+  transform: scale(1.05);
+}
+
+.game-cover {
+  padding-top: 57.4%;
+  transition: .3s;
+  display: flex;
+  position: relative;
+
+  picture {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.discount {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: rgb(175, 19, 19);
+  position: absolute;
+  border-radius: 8px 8px 0;
+  padding: 9px 6px 9px 7px;
+  z-index: 2;
+  left: -3px;
+  bottom: -2px;
+  transition: 2s;
+  font-family: 'Lato', sans-serif;
+}
+
+.discount::after {
+  transform: skewX(16deg);
+  width: 100%;
+  border-radius: 10px 5px;
+  content: "";
+  position: absolute;
+  background-color: rgb(175, 19, 19);
+  top: 0;
+  bottom: 0;
+  right: -4px;
+  z-index: -1;
+}
+
+.game-img {
+  position: absolute;
+}
+
+.information {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+  min-height: 2.6rem;
+  height: 100%;
+}
+
+.text {
+  display: inline-flex;
+  min-width: 0;
+  flex-direction: column;
+  margin-top: 0.4rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.price {
+  margin-left: auto;
+  font-size: 2.3rem;
+}

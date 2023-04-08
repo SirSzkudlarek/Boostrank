@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Layout from './layouts/default';
 import Hero from './sections/hero/hero';
+import TrendyGames from './sections/trendyGames/trendyGames';
+import TrustPanel from './sections/trustPanel/trustPanel';
+import Preorders from './sections/preorders/preorders';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,6 +13,9 @@ root.render(
   <React.StrictMode>
     <Layout>
       <Hero/>
+      <TrendyGames/>
+      <TrustPanel/>
+      <Preorders/>
     </Layout>
   </React.StrictMode>
 );

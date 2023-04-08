@@ -1,4 +1,5 @@
 @use "src/styles/mixins" as mx;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -62,7 +63,7 @@ html {
 }
 
 body {
-  font-family: var(--fontPoppins);
+  font-family: 'Lato', sans-serif;
   font-size: var(--font-size-md);
   overflow-x: hidden;
   background-color: var(--basic);

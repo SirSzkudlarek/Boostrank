@@ -7,11 +7,6 @@ body {
   flex: 1;
   display: flex;
   flex-flow: column nowrap;
-  gap: 8rem;
-
-  @include mx.media(tablet-up) {
-    gap: 14rem;
-  }
 }
 
 .wrapper {

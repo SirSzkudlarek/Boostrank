@@ -1,0 +1,105 @@
+@use "src/styles/mixins" as mx;
+
+p {
+  color: white;
+}
+
+.trust-panel {
+  padding: 2rem 0;
+  background-color: black;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+
+  @include mx.media(tablet-up) {
+    padding: 3rem 0;
+    margin: 2rem 0;
+    gap: 4rem;
+  }
+
+  @include mx.media(laptop-up) {
+    padding: 4rem 0;
+    margin: 3rem 0;
+    gap: 6rem;
+  }
+}
+
+.trust-panel-statement {
+  display: flex;
+  gap: 1.5rem;
+  margin: auto 0;
+}
+
+.icon-xl {
+  width: 4rem;
+  height: 4rem;
+  flex: 0 0 4rem;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: rgb(175, 19, 19);
+
+  @include mx.media(laptop-up) {
+    width: 5rem;
+    height: 5rem;
+    flex: 0 0 5rem;
+  }
+}
+
+.spacer-line {
+  height: 7rem;
+  width: 1px;
+  background-color: #323232;
+}
+
+.m-none {
+  display: none;
+
+  @include mx.media(tablet-up) {
+    display: flex;
+  }
+}
+
+.icon-secure {
+  mask-image: url(./src/secure-icon.png);
+}
+
+.icon-customer-support {
+  mask-image: url(./src/icon-customer-service.png);
+}
+
+.icon-download {
+  mask-image: url(./src/icons-download.png);
+}
+
+.trust-panel-text {
+  line-height: 2.5rem;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    @include mx.media(tablet-up) {
+      font-size: 2rem;
+    }
+  
+    @include mx.media(laptop-up) {
+      font-size: 2.3rem;
+    }
+  }
+
+  span {
+    color: #999;
+    font-size: 1.2rem;
+
+    @include mx.media(tablet-up) {
+      font-size: 1.5rem;
+    }
+  
+    @include mx.media(laptop-up) {
+      font-size: 1.8rem;
+    }
+  }
+}

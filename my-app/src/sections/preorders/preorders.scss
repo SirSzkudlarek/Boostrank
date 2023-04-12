@@ -5,16 +5,6 @@ body {
   color: #fff;
 }
 
-picture {
-  border-radius: 15px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .section-wrapper-bestseller {
   max-width: 120rem;
   width: 100%;
@@ -145,6 +135,13 @@ picture {
 
   picture {
     overflow: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
     img {
       width: 100%;

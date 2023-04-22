@@ -1,0 +1,222 @@
+@use "src/styles/mixins" as mx;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.section-sliderReview {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 2rem 0;
+  gap: 2rem;
+}
+
+.splide-sliderReviews-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+
+  @include mx.media(desktop-up) {
+    width: 100vw;
+    height: 50rem;
+  }
+}
+
+.sliderReviews-item {
+  display: flex;
+  flex-direction: column;
+  height: 26.5rem;
+  width: 21rem;
+  margin: 3px 0;
+  background-color: black;
+
+  @include mx.media(tablet-up) {
+    height: 30.2rem;
+    width: 23.9rem;
+  }
+
+  @include mx.media(laptop-up) {
+    height: 36.7rem;
+    width: 30.1rem;
+  }
+
+  @include mx.media(desktop-up) {
+    height: 47.2rem;
+    width: 43.8rem;
+  }
+}
+
+.border-animated-gradient {
+  background: #1D1F20;
+  position: relative;
+  border-radius: 3px;
+}
+
+.border-animated-gradient:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * 3px);
+  left: calc(-1 * 3px);
+  height: calc(100% + 3px * 2);
+  width: calc(100% + 3px * 2);
+  background: linear-gradient(60deg, #ffffff,#af1313,#ffcd29,#d76a2a,#000000);
+  border-radius: calc(2 * 3px);
+  z-index: -1;
+  animation: animatedgradient 4s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.sliderReviews-itemContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem;
+}
+
+.user-container {
+  height: 4.5rem;
+  flex: 0 0 4.5rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30%;
+  background-size: 100%;
+  background-color: rgb(22, 19, 19);
+
+  @include mx.media(desktop-up) {
+    height: 6rem;
+    flex: 0 0 6rem;
+  }
+}
+
+.user-icon {
+  height: 3.5rem;
+  width: auto;
+  border-radius: 30%;
+  background-color: rgb(22, 19, 19);
+
+  @include mx.media(laptop-up) {
+    height: 5rem;
+  }
+
+  @include mx.media(desktop-up) {
+    height: 6rem;
+  }
+}
+
+.recommended-icon {
+  height: 4.5rem;
+  flex: 0 0 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem;
+  margin-left: 1rem;
+  width: 6rem;
+
+  @include mx.media(laptop-up) {
+    height: 5rem;
+    flex: 0 0 5rem;
+  }
+
+  @include mx.media(desktop-up) {
+    height: 6rem;
+    flex: 0 0 6rem;
+  }
+}
+
+.like {
+  background-color: rgba(109,212,50,.15);
+}
+
+.dislike {
+  background-color: rgba(175,19,19,.15);
+}
+
+.icon-like {
+  mask-image: url(./src/icon-like.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: green;
+}
+
+.icon-dislike {
+  mask-image: url(./src/icon-dislike.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: rgb(175, 19, 19);
+}
+
+.sliderReviews-itemReadable {
+  -webkit-line-clamp: 3;
+  text-align: center;
+  margin: 1.5rem;
+  margin-top: 0!important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  color: #fff;
+  box-sizing: border-box;
+  height: 100%;
+
+  @include mx.media(laptop-up) {
+    -webkit-line-clamp: 4;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+
+  @include mx.media(desktop-up) {
+    margin: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.splide__arrows {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+}
+
+.splide__arrow {
+  background: inherit;
+}
+
+.splide__arrow--prev {
+  left: -7rem;
+
+  @include mx.media(desktop-up) {
+    left: -10rem;
+  }
+}
+
+.splide__arrow--next {
+  right: -7rem;
+
+  @include mx.media(desktop-up) {
+    right: -10rem;
+  }
+}

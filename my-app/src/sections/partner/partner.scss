@@ -7,7 +7,7 @@ strong {
 .section-partner {
   height: 24rem;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding: 0 2rem;
   background-color: black;
   position: relative;
@@ -25,6 +25,7 @@ strong {
   @include mx.media(laptop-up) {
     height: 30rem;
     padding: 0 3rem;
+    margin-bottom: 3rem;
   }
 
   @include mx.media(deskopt-up) {

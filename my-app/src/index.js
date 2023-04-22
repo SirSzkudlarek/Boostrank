@@ -7,6 +7,7 @@ import TrendyGames from './sections/trendyGames/trendyGames';
 import TrustPanel from './sections/trustPanel/trustPanel';
 import Preorders from './sections/preorders/preorders';
 import Partner from './sections/partner/partner';
+import SliderReviews from './sections/sliderReviews/sliderReviews';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +19,7 @@ root.render(
       <TrustPanel/>
       <Preorders/>
       <Partner/>
+      <SliderReviews/>
     </Layout>
   </React.StrictMode>
 );

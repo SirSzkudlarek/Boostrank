@@ -14,7 +14,7 @@ import arrowNext from './src/arrow-next.png';
 function SliderReviews() {
   return (
     <section className='section-sliderReview'>
-      <div class="headline">
+      <div class="headline-sliderReviews">
         <h2 class="headline-title">Gamer reviews</h2>
         <div class="button">Add Review</div>
       </div>

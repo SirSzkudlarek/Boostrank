@@ -178,7 +178,7 @@ function TrendyGames() {
                 <span className='title'>Tekken 7</span>
               </div>
             </div>
-            <div className='price'>27.20</div>
+            <div className='price'>27.20zł</div>
           </div>
         </div>
       </div>
@@ -385,7 +385,7 @@ function TrendyGames() {
                     <span className='title'>Tekken 7</span>
                   </div>
                 </div>
-                <div className='price'>27.20</div>
+                <div className='price'>27.20zł</div>
               </div>
             </div>
           </SplideSlide>

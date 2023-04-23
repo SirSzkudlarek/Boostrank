@@ -1,0 +1,80 @@
+@use "src/styles/mixins" as mx;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.section-websiteReviews {
+  margin: 1rem 0 2rem 0;
+
+}
+
+.container-websiteReviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item-websiteReviews {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 1.5rem;
+  background-color: rgb(22, 19, 19);
+  width: calc(100% - 3rem);
+  min-height: 100%;
+  border-radius: 1.5rem;
+}
+
+.user-websiteReviews {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.user-icon-websiteReviews {
+  height: 5rem;
+  flex: 0 0 5rem;
+  border-radius: 30%;
+}
+
+.review-summary-websiteReviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-container-websiteReviews {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .5rem;
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+.star-websiteReviews {
+  height: 1.8rem;
+  width: auto;
+}
+
+.game-name-websiteReviews {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.readable-websiteReviews {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    line-height: 2rem;
+    color: #929292
+}
+
+.time-posted-websiteReviews {
+  font-size: 1.3rem;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -8,6 +8,28 @@
   gap: 2rem;
 }
 
+.headline-sliderReviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 120rem;
+  align-self: center;
+  padding: 0 2rem;
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  @include mx.media(desktop-up) {
+    h2 {
+      font-size: 2.7rem;
+      font-weight: 700;
+    }
+  }
+}
+
 .splide-sliderReviews-wrapper {
   display: flex;
   justify-content: center;

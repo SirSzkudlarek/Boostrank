@@ -6,8 +6,11 @@ import da3 from './src/dragon-age-inquisition.jpg';
 import w3 from './src/warcraft3.jpg';
 import gk from './src/graveyard-keeper.jpg';
 import tlouI from './src/the-last-of-us-part1.jpg';
-import userMale from './src/user-male-icon.png';
-import userFemale from './src/user-female-icon.png';
+import tlouHater from './src/tlou-hater.png';
+import warcraftHater from './src/warcraft-hater.png';
+import d2Fan from './src/d2-fan.png';
+import da3Fan from './src/da-Inquisition-fan.png';
+import gkFan from './src/graveyard-keeper-fan.png'; 
 import arrowPrev from './src/arrow-previous.png';
 import arrowNext from './src/arrow-next.png';
 
@@ -74,7 +77,7 @@ function SliderReviews() {
 
                 <div className='sliderReviews-itemContent'>
                   <div className='user-container'>
-                    <img src={userMale} alt='user-male-icon' className='user-icon'></img>
+                    <img src={d2Fan} alt='user-male-icon' className='user-icon'></img>
                   </div>
                   <div className='recommended-icon like'>
                     <div className='icon-socials icon-like'></div>
@@ -94,7 +97,7 @@ function SliderReviews() {
 
                 <div className='sliderReviews-itemContent'>
                   <div className='user-container'>
-                    <img src={userFemale} alt='user-female-icon' className='user-icon'></img>
+                    <img src={da3Fan} alt='user-female-icon' className='user-icon'></img>
                   </div>
                   <div className='recommended-icon like'>
                     <div className='icon-socials icon-like'></div>
@@ -114,7 +117,7 @@ function SliderReviews() {
 
                 <div className='sliderReviews-itemContent'>
                   <div className='user-container'>
-                    <img src={userMale} alt='user-male-icon' className='user-icon'></img>
+                    <img src={warcraftHater} alt='user-male-icon' className='user-icon'></img>
                   </div>
                   <div className='recommended-icon dislike'>
                     <div className='icon-socials icon-dislike'></div>
@@ -134,7 +137,7 @@ function SliderReviews() {
 
                 <div className='sliderReviews-itemContent'>
                   <div className='user-container'>
-                    <img src={userMale} alt='user-male-icon' className='user-icon'></img>
+                    <img src={gkFan} alt='user-male-icon' className='user-icon'></img>
                   </div>
                   <div className='recommended-icon like'>
                     <div className='icon-socials icon-like'></div>
@@ -154,7 +157,7 @@ function SliderReviews() {
 
                 <div className='sliderReviews-itemContent'>
                   <div className='user-container'>
-                    <img src={userFemale} alt='user-female-icon' className='user-icon'></img>
+                    <img src={tlouHater} alt='user-female-icon' className='user-icon'></img>
                   </div>
                   <div className='recommended-icon dislike'>
                     <div className='icon-socials icon-dislike'></div>

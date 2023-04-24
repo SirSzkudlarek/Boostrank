@@ -60,7 +60,7 @@ function SliderReviews() {
               autoWidth: true,
               gap: '5rem',
               padding: '4rem',
-              width: '75%',
+              width: '142.5rem',
               fixedHeight: 'auto',
               autoplay: false,
             },

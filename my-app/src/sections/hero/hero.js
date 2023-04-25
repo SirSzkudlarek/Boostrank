@@ -15,7 +15,7 @@ function Hero() {
           <span className='price-parallax'>280.47zł</span>
         </div>
       </div>
-      <a target='_blank' rel='noopener noreferrer' className='parallax-link' href='https://diablo4.blizzard.com/pl-pl/' title='Buy Diablo 3 on blizzard offical website.'> </a>
+      <a target='_blank' rel='noopener noreferrer' className='parallax-link' href='https://diablo4.blizzard.com/en-gb/' title='Buy Diablo 3 on blizzard offical website.'> </a>
     </section>
   );
 }

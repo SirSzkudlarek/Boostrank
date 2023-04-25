@@ -8,6 +8,7 @@ import TrustPanel from './sections/trustPanel/trustPanel';
 import Preorders from './sections/preorders/preorders';
 import Partner from './sections/partner/partner';
 import WebsiteReviews from './sections/website-reviews/websiteReviews';
+import MiddleBanner from './sections/middleBanner/middleBanner';
 import SliderReviews from './sections/sliderReviews/sliderReviews';
 import reportWebVitals from './reportWebVitals';
 
@@ -21,6 +22,7 @@ root.render(
       <Preorders/>
       <Partner/>
       <WebsiteReviews/>
+      <MiddleBanner/>
       <SliderReviews/>
     </Layout>
   </React.StrictMode>

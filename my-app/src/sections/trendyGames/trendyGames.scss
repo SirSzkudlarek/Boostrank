@@ -35,6 +35,8 @@ body {
   h2 {
     font-size: 1.7rem;
     font-weight: 700;
+    color: var(--accent);
+    text-shadow: 1px 1px var(--light-primary);
   }
 
   @include mx.media(desktop-up) {
@@ -52,7 +54,7 @@ body {
   font-size: 1.5rem;
   height: 4rem;
   padding: 0 1.5rem;
-  background-color: rgb(175, 19, 19);
+  background-color: var(--primary);
   border-radius: 3.5rem;
   z-index: 1;
   white-space: nowrap;
@@ -62,7 +64,8 @@ body {
   justify-content: center;
   box-sizing: border-box;
   transition: .2s;
-  border: .2rem solid rgb(215, 106, 42);
+  border: .2rem solid var(--accent);
+  text-shadow: 2px 1px var(--black);
   cursor: pointer;
   text-align: center;
 
@@ -124,12 +127,25 @@ body {
   picture {
     overflow: hidden;
     border-radius: 15px;
-    overflow: hidden;
+    border: 1px solid var(--light-primary);
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  picture::after {
+    border-radius: 13px;
+    position: absolute;
+    display: block;
+    content: '';
+    border: 3px solid var(--accent);
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
 
     img {
@@ -141,7 +157,7 @@ body {
 .discount {
   font-weight: 700;
   font-size: 1.5rem;
-  background-color: rgb(175, 19, 19);
+  background-color: var(--primary);
   position: absolute;
   border-radius: 8px 8px 0;
   padding: 9px 6px 9px 7px;
@@ -149,6 +165,7 @@ body {
   left: -3px;
   bottom: -2px;
   transition: 2s;
+  text-shadow: 2px 1px var(--black);
   font-family: 'Lato', sans-serif;
 }
 
@@ -158,7 +175,7 @@ body {
   border-radius: 10px 5px;
   content: "";
   position: absolute;
-  background-color: rgb(175, 19, 19);
+  background-color: var(--primary);
   top: 0;
   bottom: 0;
   right: -4px;
@@ -177,6 +194,7 @@ body {
   z-index: 1;
   min-height: 2.6rem;
   height: 100%;
+  text-shadow: 2px 1px var(--black);
 }
 
 .text {

@@ -20,6 +20,8 @@
   h2 {
     font-size: 1.7rem;
     font-weight: 700;
+    color: var(--accent);
+    text-shadow: 1px 1px var(--light-primary);
   }
 
   @include mx.media(desktop-up) {
@@ -51,7 +53,7 @@
   height: 26.5rem;
   width: 21rem;
   margin: 3px 0;
-  background-color: black;
+  background-color: var(--white);
 
   @include mx.media(tablet-up) {
     height: 30.2rem;
@@ -70,7 +72,7 @@
 }
 
 .border-animated-gradient {
-  background: rgb(22, 19, 19);
+  background: var(--white);
   position: relative;
   border-radius: 3px;
 }
@@ -82,7 +84,7 @@
   left: calc(-1 * 3px);
   height: calc(100% + 3px * 2);
   width: calc(100% + 3px * 2);
-  background: linear-gradient(60deg, #ffffff,#af1313,#ffcd29,#d76a2a,#000000);
+  background: linear-gradient(60deg, #5badbb,#a0ebe7,#ffffff,#7bdfdb,#93e9de,#4788a7,#efebab,#e3da95,#efcf2f,#c49402,#912b03,#415d3f);
   border-radius: calc(2 * 3px);
   z-index: -1;
   animation: animatedgradient 4s ease alternate infinite;
@@ -132,6 +134,7 @@
   width: auto;
   border-radius: 30%;
   background-color: rgb(22, 19, 19);
+  border: 1.5px solid var(--black);
 
   @include mx.media(laptop-up) {
     height: 5rem;
@@ -164,11 +167,13 @@
 }
 
 .like {
-  background-color: rgba(109,212,50,.15);
+  background-color: rgba(109, 212, 50, 0.5);
+  border: 1px solid var(--accent);
 }
 
 .dislike {
-  background-color: rgba(186, 22, 22, 0.24);
+  background-color: rgba(186, 22, 22, 0.5);
+  border: 1px solid var(--primary);
 }
 
 .icon-like {
@@ -198,7 +203,7 @@
   -webkit-box-orient: vertical;
   line-height: 1.8rem;
   font-size: 1.1rem;
-  color: #929292;
+  color: var(--grey);
   box-sizing: border-box;
   height: 100%;
 

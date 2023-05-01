@@ -6,7 +6,7 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(46, 43, 43);
+  background-color: var(--basic);
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -39,7 +39,7 @@
 .highlights-middleBanner-wrapper:before {
   content: "";
   clip-path: polygon(50% 100%, 100% 0, 0 0); 
-  background: rgb(46, 43, 43);
+  background: var(--basic);
   height: 100px;
   min-width: 1700px;
   width: 100%;
@@ -64,7 +64,7 @@
 .highlights-middleBanner-wrapper:after {
   content: "";
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  background: rgb(46, 43, 43);
+  background: var(--basic);
   height: 100px;
   min-width: 1700px;
   width: 100%;
@@ -145,41 +145,6 @@
   align-items: center;
   border-top: 0;
   padding-top: 0;
-}
-
-.discount-parallax {
-  position: relative;
-  margin-right: 2rem;
-  font-weight: 700;
-  font-size: 1.3rem;
-  background-color: rgb(175, 19, 19);
-  color: #fff;
-  padding: 0.9rem 0.6rem 0.9rem 0.7rem;
-  border-radius: 0.8rem 0.8rem 0;
-  z-index: 2;
-  font-family: 'Lato', sans-serif;
-
-  @include mx.media(laptop-up) {
-    margin-right: 3rem;
-    font-size: 1.5rem;
-  }
-}
-
-.discount-parallax:after {
-  transform: skewX(16deg);
-  width: 100%;
-  border-radius: 0.7rem 0.4rem;
-  content: "";
-  position: absolute;
-  background-color: rgb(175, 19, 19);
-  top: 0;
-  bottom: 0;
-  right: -0.4rem;
-  z-index: -1;
-
-  @include mx.media(laptop-up) {
-    border-radius: 1rem 0.5rem;
-  }
 }
 
 .price-parallax {

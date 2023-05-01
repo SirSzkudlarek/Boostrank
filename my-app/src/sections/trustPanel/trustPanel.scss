@@ -6,7 +6,9 @@ p {
 
 .trust-panel {
   padding: 2rem 0;
-  background-color: black;
+  background-color: var(--white);
+  border-bottom: .7rem solid var(--accent);
+  border-top: .7rem solid var(--accent);
   margin: 1.5rem 0;
   display: flex;
   flex-direction: row;
@@ -39,7 +41,7 @@ p {
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
-  background-color: rgb(175, 19, 19);
+  background-color: var(--primary);
 
   @include mx.media(laptop-up) {
     width: 5rem;
@@ -51,7 +53,7 @@ p {
 .spacer-line {
   height: 7rem;
   width: 1px;
-  background-color: #323232;
+  background-color: var(--primary);
 }
 
 .m-none {
@@ -78,7 +80,9 @@ p {
   line-height: 2.5rem;
 
   p {
+    color: var(--accent);
     font-size: 1.5rem;
+    text-shadow: 2px 1px var(--light-primary);
     font-weight: 700;
 
     @include mx.media(tablet-up) {
@@ -91,7 +95,7 @@ p {
   }
 
   span {
-    color: #999;
+    color: var(--primary);
     font-size: 1.2rem;
 
     @include mx.media(tablet-up) {

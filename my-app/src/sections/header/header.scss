@@ -7,7 +7,7 @@
   position: relative;
   height: 8rem;
   width: 100%;
-  background-color: black;
+  background-color: var(--dark-primary);
   color: #fff;
   padding: 2rem;
 
@@ -35,6 +35,7 @@
 
     h1 {
       font-size: var(--font-size-2xl);
+      text-shadow: 2px 1px var(--black);
     }
   }
 
@@ -127,7 +128,8 @@ h1 {
 }
 
 .text {
-  color: #fff;
+  color: var(--white);
+  text-shadow: 2px 1px var(--black);
 
   @include mx.media(mobile) {
     font-size: 1.5rem;

@@ -1,6 +1,6 @@
 @use "src/styles/mixins" as mx;
 body {
-  background-color: rgb(46, 43, 43);
+  background-color: var(--basic);
 }
 
 .main {

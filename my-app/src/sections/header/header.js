@@ -1,65 +1,54 @@
 import './header.scss';
-import iconPC from './graphics/png/icon-pc.png';
-import iconPS from './graphics/png/icon-ps.png';
-import iconXBOX from './graphics/png/icon-xbox.png';
-import iconNIN from './graphics/png/icon-nin.png';
 
 function Header() {
   return (
-    <div className='header-wrapper'>
-      <div className='title-wrapper'>
-        <h1>Boostrank</h1>
-      </div>
-      <nav className='header-nav-wrapper'>
+    <nav className='header-container'>
         <div className='menu'>
-          <div className='menu-items'>
-            <div className='pc-item'>
-              <a className='link' href='#'>
-                <div className='icon'>
-                  <img src={iconPC} className='icon' alt="iconPC" />
-                </div>
-                <span className='text'>PC</span>
-                <span id="uparrow"></span>
-              </a>
-            </div>
+          <div className='trendings'>
+            <a className='links-nav-menu' href='#'>Trending</a>
+            <a className='links-nav-menu' href='#'>Pre-orders</a>
+            <a className='links-nav-menu' href='#'>Upcoming</a>
+            <a className='links-nav-menu' href='#'>Support 24/7</a>
+          </div>
+          
+          <div className='product-menu'>
+            <div className='glossy'></div>
+            <div className='links-nav-menu'>
+              <div className='nav pc'>
+                <a className='access' href='#'>
+                  <div className='icon-platform icon-pc icon-xs'></div>
+                  <span className='title'>PC</span>
+                  <div className='icon-arrow icon-xxxs'></div>
+                </a>
+              </div>
 
-            <div className='playstation-item'>
-              <a className='link' href='#'>
-                <div className='icon'>
-                  <img src={iconPS} className='icon' alt="iconPS" />
-                </div>
-                <span className='text'>Playstation</span>
-                <span id="uparrow"></span>
-              </a>
-            </div>
+              <div className='nav playstation'>
+                <a className='access' href='#'>
+                  <div className='icon-platform icon-pc icon-xs'></div>
+                  <span className='title'>Playstation</span>
+                  <div className='icon-arrow icon-xxxs'></div>
+                </a>
+              </div>
 
-            <div className='xbox-item'>
-              <a className='link' href='#'>
-                <div className='icon'>
-                  <img src={iconXBOX} className='icon' alt="iconXBOX" />
-                </div>
-                <span className='text'>Xbox</span>
-                <span id="uparrow"></span>
-              </a>
-            </div>
+              <div className='nav xbox'>
+                <a className='access' href='#'>
+                  <div className='icon-platform icon-pc icon-xs'></div>
+                  <span className='title'>Xbox</span>
+                  <div className='icon-arrow icon-xxxs'></div>
+                </a>
+              </div>
 
-            <div className='nintendo-item'>
-              <a className='link' href='#'>
-                <div className='icon'>
-                  <img src={iconNIN} className='icon' alt="iconNIN" />
-                </div>
-                <span className='text'>Nintendo</span>
-                <span id="uparrow"></span>
-              </a>
+              <div className='nav nintendo'>
+                <a className='access' href='#'>
+                  <div className='icon-platform icon-pc icon-xs'></div>
+                  <span className='title'>Nintendo</span>
+                  <div className='icon-arrow icon-xxxs'></div>
+                </a>
+              </div>
             </div>
           </div>
-
-          <form className='menu-search'>
-            <input className='search-input'></input>
-          </form>
         </div>
-      </nav>
-    </div>
+    </nav>
   );
 }
 

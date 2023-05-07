@@ -23,6 +23,7 @@ function Header() {
 
           <div className='product-menu'>
             <div className='glossy'></div>
+
             <div className='links-nav-menu'>
               <div className='nav pc'>
                 <a className='access' href='#'>
@@ -34,7 +35,7 @@ function Header() {
 
               <div className='nav playstation'>
                 <a className='access' href='#'>
-                  <div className='icon-platform icon-pc icon-xs'></div>
+                  <div className='icon-platform icon-playstation icon-xs'></div>
                   <span className='title'>Playstation</span>
                   <div className='icon-arrow icon-xxxs'></div>
                 </a>
@@ -42,7 +43,7 @@ function Header() {
 
               <div className='nav xbox'>
                 <a className='access' href='#'>
-                  <div className='icon-platform icon-pc icon-xs'></div>
+                  <div className='icon-platform icon-xbox icon-xs'></div>
                   <span className='title'>Xbox</span>
                   <div className='icon-arrow icon-xxxs'></div>
                 </a>
@@ -50,12 +51,19 @@ function Header() {
 
               <div className='nav nintendo'>
                 <a className='access' href='#'>
-                  <div className='icon-platform icon-pc icon-xs'></div>
+                  <div className='icon-platform icon-nintendo icon-xs'></div>
                   <span className='title'>Nintendo</span>
                   <div className='icon-arrow icon-xxxs'></div>
                 </a>
               </div>
             </div>
+
+            <form className='search-nav-wrapper'>
+              <div className='search-nav-container'>
+                <input className='search-input'></input>
+                <div className='icon-search-input'></div>
+              </div>
+            </form>
           </div>
         </div>
     </nav>

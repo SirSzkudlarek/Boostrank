@@ -1,5 +1,15 @@
 import './header.scss';
 
+const body = document.querySelector('body');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    body.classList.add('scrolled');
+  } else {
+    body.classList.remove('scrolled');
+  }
+});
+
 function Header() {
   return (
     <nav className='header-container'>
@@ -10,7 +20,7 @@ function Header() {
             <a className='links-nav-menu' href='#'>Upcoming</a>
             <a className='links-nav-menu' href='#'>Support 24/7</a>
           </div>
-          
+
           <div className='product-menu'>
             <div className='glossy'></div>
             <div className='links-nav-menu'>

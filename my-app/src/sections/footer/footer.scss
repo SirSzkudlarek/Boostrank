@@ -60,10 +60,11 @@
 }
 
 .logo-br {
-  font-size: 3.5rem;
-  color: var(--white);
-  text-decoration: none;
-  text-shadow: 2px 1px var(--black);
+  display: block;
+  background-image: url(./src/logo3.png);
+  background-size: 100%;
+  width: 22.5rem;
+  height: 6rem;
 }
 
 .list-wrapper {

@@ -7,7 +7,7 @@ function Footer() {
         <div className='links'>
           <div className='logo-wrapper'>
             <div className='logo'>
-              <a href="#" title="Homepage" className='logo-br'>Boostrank</a>
+              <a href="#" title="Homepage" className='logo-br'></a>
             </div>
           </div>
 

@@ -13,6 +13,7 @@ window.addEventListener('scroll', () => {
 function Header() {
   return (
     <nav className='header-container'>
+        <a href='#' title='Home' className='logo-ig'></a>
         <div className='menu'>
           <div className='trendings'>
             <a className='links-nav-menu' href='#'>Trending</a>

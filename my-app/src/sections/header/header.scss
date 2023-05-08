@@ -45,8 +45,12 @@ body.scrolled .header-container {
   z-index: 21;
 
   .menu {
-    top: -2.9rem;
-    width: 45rem;
+    width: 100%;
+
+    @include mx.media(laptop-up) {
+      top: -2.9rem;
+      width: 45rem;
+    }
 
     .trendings {
       opacity: 0;
@@ -55,7 +59,11 @@ body.scrolled .header-container {
     }
 
     .product-menu {
-      height: 5rem;
+      height: auto;
+
+      @include mx.media(laptop-up) {
+        height: 5rem;
+      }
 
       .glossy {
         opacity: 0;
@@ -75,7 +83,10 @@ body.scrolled .header-container {
         }
 
         .nav .access {
-          padding: 1.6rem 1.5rem 3.3rem;
+
+          @include mx.media(laptop-up) {
+            padding: 1.6rem 1.5rem 3.3rem;
+          }
 
           .icon-xs {
             display: none;
@@ -86,12 +97,18 @@ body.scrolled .header-container {
       .search-nav-wrapper .search-nav-container {
 
         .search-input {
-          height: 5rem;
-          width: 5rem;
+          @include mx.media(laptop-up) {
+            height: 5rem;
+            width: 5rem;
+          }
         }
 
         .icon-search-input {
-          width: 5rem;
+          width: 100%;
+
+          @include mx.media(laptop-up) {
+            width: 5rem;
+          }
         }
       }
     }

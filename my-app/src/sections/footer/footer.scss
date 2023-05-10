@@ -63,8 +63,14 @@
   display: block;
   background-image: url(./src/logo3.png);
   background-size: 100%;
-  width: 22.5rem;
-  height: 6rem;
+  background-repeat: no-repeat;
+  width: 11rem;
+  height: 3rem;
+
+  @include mx.media(laptop-up) {
+    width: 22.5rem;
+    height: 6rem;
+  }
 }
 
 .list-wrapper {

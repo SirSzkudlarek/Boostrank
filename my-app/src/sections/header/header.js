@@ -14,6 +14,7 @@ function Header() {
   return (
     <nav className='header-container'>
         <a href='#' title='Home' className='logo-ig'></a>
+
         <div className='menu'>
           <div className='trendings'>
             <a className='links-nav-menu' href='#'>Trending</a>
@@ -65,6 +66,20 @@ function Header() {
                 <div className='icon-search-input'></div>
               </div>
             </form>
+          </div>
+        </div>
+
+        <div className='header-right'>
+          <div className='cart-app'>
+            <a title='cart' href='#' className='cart-container'>
+              <div className='icon-cart icon-small'></div>
+            </a>
+          </div>
+
+          <div className='login-container-header'>
+            <div className='user-header'>
+              <div className='user-icon-header icon-small'></div>
+            </div>
           </div>
         </div>
     </nav>

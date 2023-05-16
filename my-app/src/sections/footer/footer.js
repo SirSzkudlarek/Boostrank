@@ -14,13 +14,13 @@ function Footer() {
           <div className='list-wrapper'>
             <ul className='list'>
               <li>
-                <a className='sublinks'>Polityka prywatności</a>
+                <a className='sublinks'>Privacy policy</a>
               </li>
               <li>
-                <a className='sublinks'>Warunki korzystania</a>
+                <a className='sublinks'>Terms of Use</a>
               </li>
               <li>
-                <a className='sublinks'>Kontakt do nas</a>
+                <a className='sublinks'>Contact us</a>
               </li>
               <li>
                 <a className='sublinks'>FAQ</a>

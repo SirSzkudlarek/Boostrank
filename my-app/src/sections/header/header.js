@@ -1,4 +1,6 @@
 import './header.scss';
+import React from 'react';
+import {useRef, useEffect} from 'react';
 
 const body = document.querySelector('body');
 
@@ -10,7 +12,42 @@ window.addEventListener('scroll', () => {
   }
 });
 
+  
+
 function Header() {
+  
+  const searchOpen = useRef(null);
+  const searchClose = useRef(null);
+  const body = document.querySelector('body');
+
+  useEffect(() => {
+    const handleClick = event => {
+        body.classList.add('search-open');
+    };
+
+    const button = searchOpen.current;
+
+    button.addEventListener('click', handleClick);
+
+    return () => {
+      button.removeEventListener('click', handleClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleClick = event => {
+        body.classList.remove('search-open');
+    };
+
+    const button = searchClose.current;
+
+    button.addEventListener('click', handleClick);
+
+    return () => {
+      button.removeEventListener('click', handleClick);
+    };
+  }, []);
+
   return (
     <nav className='header-container'>
         <a href='#' title='Home' className='logo-ig'></a>
@@ -62,8 +99,10 @@ function Header() {
 
             <form className='search-nav-wrapper'>
               <div className='search-nav-container'>
-                <input className='search-input'></input>
-                <div className='icon-search-input'></div>
+                <input className='search-input' placeholder='Dragon Age, RPG, sand-box...' itemProp='query-input' autoCapitalize='off' spellCheck='false' autocomplete='off'></input>
+                <div ref={searchClose} className='close-search'>+</div>
+                <div ref={searchOpen} className='icon-search-input'></div>
+                <a className='search-advanced' href='#'>Advanced search</a>
               </div>
             </form>
           </div>
@@ -72,18 +111,18 @@ function Header() {
         <div className='header-right'>
           <div className='cart-app'>
             <a title='cart' href='#' className='cart-container'>
-              <div className='icon-cart icon-small'></div>
+              <div className='icon-cart icon-small-header'></div>
             </a>
           </div>
 
           <div className='login-container-header'>
             <div className='user-header'>
-              <div className='user-icon-header icon-small'></div>
+              <div className='user-icon-header icon-small-header'></div>
             </div>
           </div>
         </div>
     </nav>
   );
-}
+};
 
 export default Header;

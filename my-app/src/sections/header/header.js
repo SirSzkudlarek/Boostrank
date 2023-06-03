@@ -1,6 +1,7 @@
 import './header.scss';
 import React from 'react';
 import {useRef, useEffect} from 'react';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 const body = document.querySelector('body');
 
@@ -110,15 +111,15 @@ function Header() {
 
         <div className='header-right'>
           <div className='cart-app'>
-            <a title='cart' href='#' className='cart-container'>
+            <Link to='/UserLoginPage' className='cart-container'>
               <div className='icon-cart icon-small-header'></div>
-            </a>
+            </Link>
           </div>
 
           <div className='login-container-header'>
-            <div className='user-header'>
+            <Link to='/UserLoginPage' className='user-header'>
               <div className='user-icon-header icon-small-header'></div>
-            </div>
+            </Link>
           </div>
         </div>
     </nav>

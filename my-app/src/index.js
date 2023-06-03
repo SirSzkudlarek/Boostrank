@@ -1,30 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import Layout from './layouts/default';
-import Hero from './sections/hero/hero';
-import TrendyGames from './sections/trendyGames/trendyGames';
-import TrustPanel from './sections/trustPanel/trustPanel';
-import Preorders from './sections/preorders/preorders';
-import Partner from './sections/partner/partner';
-import WebsiteReviews from './sections/website-reviews/websiteReviews';
-import MiddleBanner from './sections/middleBanner/middleBanner';
-import SliderReviews from './sections/sliderReviews/sliderReviews';
+import Home from './pages/Home.jsx';
+import UserLoginPage from './pages/UserLoginPage.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Layout>
-      <Hero/>
-      <TrendyGames/>
-      <TrustPanel/>
-      <Preorders/>
-      <Partner/>
-      <WebsiteReviews/>
-      <MiddleBanner/>
-      <SliderReviews/>
-    </Layout>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/UserLoginPage" element={<UserLoginPage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

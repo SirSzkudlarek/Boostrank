@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx';
 import UserLoginPage from './pages/UserLoginPage.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import TheLegendOFZeldaTotk from './pages/GameItemPages/TheLegendOfZelda-totk';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route index element={<Home />} />
         <Route path="/UserLoginPage" element={<UserLoginPage />} />
+        <Route path="/TheLegendOFZeldaTotk" element={<TheLegendOFZeldaTotk />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

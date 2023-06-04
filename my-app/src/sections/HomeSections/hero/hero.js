@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './hero.scss';
 import headerParallax from './src/tloz-tears-of-the-kindom.jpg';
 
@@ -15,7 +16,7 @@ function Hero() {
           <span className='price-parallax'>280.47zł</span>
         </div>
       </div>
-      <a target='_blank' rel='noopener noreferrer' className='parallax-link' href='https://www.nintendo.com/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/' title='Buy Diablo 3 on blizzard offical website.'> </a>
+      <Link to='/TheLegendOfZeldaTotk' className='parallax-link'> </Link>
     </section>
   );
 }

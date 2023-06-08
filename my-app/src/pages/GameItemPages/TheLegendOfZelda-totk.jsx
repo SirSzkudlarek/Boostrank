@@ -3,6 +3,7 @@ import '../../sections/HomeSections/hero/hero.scss';
 import LayoutDefault from '../../layouts/default/default';
 import Parallax from '../../sections/HomeSections/hero/src/tloz-tears-of-the-kindom.jpg'
 import ContentGamesItemsPage from '../../wrappers/contentGamesItemsPage';
+import GamesPanel from '../../sections/GamesItemsPageSections/gamesPanel/gamesPanel';
 
 
 function TheLegendOFZeldaTotk() {
@@ -15,7 +16,7 @@ function TheLegendOFZeldaTotk() {
           </div>
         </section>
         <ContentGamesItemsPage>
-
+          <GamesPanel/>
         </ContentGamesItemsPage>
       </LayoutDefault>
     );

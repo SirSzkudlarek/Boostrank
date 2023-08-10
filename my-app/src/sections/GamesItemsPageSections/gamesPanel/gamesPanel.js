@@ -1,33 +1,38 @@
 import './gamesPanel.scss';
-import bannerImg from './src/zelda-totk-banner.jpg';
+import { useLocation } from 'react-router-dom';
 
-function GamesPanel() {
+function GamesPanel(props) {
+  const location = useLocation();
+  console.log(props, " props");
+  console.log(location, " useLocation Hook");
+  const data = location.state?.data;
+
   return (
     <section className='games-panel-wrapper'>
       <div className='games-panel'>
         <div className='game-graphic-presentation'>
           <picture className='banner'>
-            <img className='banner-graphic' src={bannerImg} alt='The Legend of Zelda Tears of The Kingdom'></img>
+            <img className='banner-graphic' src={ data ? data.gameImage : "There should be game Image" } alt='The Legend of Zelda Tears of The Kingdom'></img>
           </picture>
         </div>
 
         <div className='game-panel-item wide'>
           <div className='item-name'>
-            <h1>The Legend of Zelda: Tears of the Kingdom Switch - Europe</h1>
+            <h1>{ data ? data.productName : "Product Name" }</h1>
           </div>
 
           <div className='item-subinfo'>
             <div className='platform'>
-              <div className='platform-nintendo'>
-                <div className='icon-s icon-switch'></div>
+              <div className={ data ? data.platformBackground : "platform" }>
+                <div className={ data ? data.platformImage : "icon-s" }></div>
               </div>
-              <span>Switch</span>
+              <span>{ data ? data.platformName : "Platform Name" }</span>
               <div className='spacer'></div>
             </div>
 
             <div className='avaible'>
               <div className='icon-check icon-xxs'></div>
-              <span>In stock</span>
+              <span>{ data ? data.quntinityAvailable : "Available" }</span>
               <div className='spacer'></div>
             </div>
 
@@ -40,18 +45,18 @@ function GamesPanel() {
           <div className='viral'>
             <span className='fire'>
               <div className='fire-icon icon-xs'></div>
-              74 users on this page
+              { data ? data.userOnPage : "I dunno, sorry :^/" } users on this page
             </span>
           </div>
 
           <div className='amount'>
             <div className='discounts'>
               <div className='icon-tag'></div>
-              <div className='retail'>280.47zł</div>
+              <div className='retail'>{ data ? data.retailPrice : "Retail Price" }</div>
             </div>
 
-            <div className='discounted'>-24%</div>
-            <div className='total'>347.78zł</div>
+            <div className='discounted'>{ data ? data.discount : "Discount" }</div>
+            <div className='total'>{ data ? data.price : "Price" }</div>
           </div>
 
           <div className='action-priced'>

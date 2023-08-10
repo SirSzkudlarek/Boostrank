@@ -1,0 +1,94 @@
+@use "src/styles/mixins" as mx;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.headline {
+  padding: 0;
+}
+
+.vimeo {
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.vimeo iframe {
+  border-radius: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-wrapper {
+  margin: -1.5rem;
+  display: flex;
+  justify-content: center;
+
+
+  .highlight-img {
+    display: flex;
+    margin: 1.5rem;
+    width: 50%;
+
+    picture {
+      padding-bottom: 56.25%;
+      position: relative;
+      width: 100%;
+
+      .gallery-img-highlight {
+        border-radius: 1.5rem;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .rest-img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+    .rest-img {
+      display: flex;
+      margin: 1.5rem;
+      width: calc(50% - 3rem);
+
+      picture {
+        padding-bottom: 56.25%;
+        position: relative;
+        width: 100%;
+        height: 15.4rem;
+
+        .gallery-img {
+          border-radius: 1.5rem;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.description {
+  position: relative;
+  width: 100%;
+
+  .headline {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-shadow: 1px 1px var(--light-primary);
+    margin-bottom: 2rem;
+  }
+
+  .text {
+    line-height: 2.3rem;
+    font-size: 1.5rem;
+    color: var(--grey);
+  }
+}

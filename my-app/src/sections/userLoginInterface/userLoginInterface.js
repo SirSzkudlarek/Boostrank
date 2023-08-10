@@ -1,5 +1,6 @@
 import './userLoginInterface.scss';
 import {useRef, useEffect} from 'react';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function UserLoginInterface() {
 
@@ -33,7 +34,7 @@ function UserLoginInterface() {
   return (
     <section className='login-interface-wrapper'>
       <div className='register'>
-        <a href='#' title='Home' className='logo-ig'></a>
+        <Link to='/' className='logo-ig'></Link>
         <h1 className='register-title'> Sign in to your TreeGames Account</h1>   
         <div className='panel-log-via'>
           <a className='log-via log-via-fb'>

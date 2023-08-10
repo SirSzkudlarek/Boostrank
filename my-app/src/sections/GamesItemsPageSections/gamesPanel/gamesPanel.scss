@@ -86,9 +86,9 @@
             padding: .5rem;
 
             .icon-s {
-              width: 2.5rem;
-              height: 2.5rem;
-              flex: 0 0 2.5rem;
+              width: 3rem;
+              height: 3rem;
+              flex: 0 0 3rem;
               mask-repeat: no-repeat;
               -webkit-mask-repeat: no-repeat;
               mask-size: contain;
@@ -101,6 +101,79 @@
             .icon-switch {
               mask-image: url(./src/switch-icon.png);
               -webkit-mask-image: url(./src/switch-icon.png);
+            }
+          }
+
+          .platform-ps {
+            margin-right: 1rem;
+            background-color: #008aff;
+            border-radius: 100%;
+            padding: .5rem;
+
+            .icon-s {
+              width: 3rem;
+              height: 3rem;
+              flex: 0 0 3rem;
+              mask-repeat: no-repeat;
+              -webkit-mask-repeat: no-repeat;
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              mask-position: center;
+              -webkit-mask-position: center;
+              background-color: #fff;
+            }
+
+            .icon-ps {
+              mask-image: url(./src/ps-icon.png);
+              -webkit-mask-image: url(./src/ps-icon.png);
+            }
+          }
+
+          .platform-xbox {
+            margin-right: 1rem;
+            background-color: #fff;
+            border-radius: 100%;
+
+            .icon-s {
+              width: 3.5rem;
+              height: 3.5rem;
+              flex: 0 0 3.5rem;
+              mask-repeat: no-repeat;
+              -webkit-mask-repeat: no-repeat;
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              mask-position: center;
+              -webkit-mask-position: center;
+              background-color: #000000;
+            }
+
+            .icon-xbox {
+              mask-image: url(./src/xbox-icon.png);
+              -webkit-mask-image: url(./src/xbox-icon.png);
+            }
+          }
+
+          .platform-pc {
+            margin-right: 1rem;
+            background-color: #fff;
+            border-radius: 100%;
+
+            .icon-s {
+              width: 3.5rem;
+              height: 3.5rem;
+              flex: 0 0 3.5rem;
+              mask-repeat: no-repeat;
+              -webkit-mask-repeat: no-repeat;
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              mask-position: center;
+              -webkit-mask-position: center;
+              background-color: #14487b;
+            }
+
+            .icon-pc {
+              mask-image: url(./src/pc-icon.png);
+              -webkit-mask-image: url(./src/pc-icon.png);
             }
           }
         }

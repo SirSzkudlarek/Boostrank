@@ -6,18 +6,18 @@ import UserLoginPage from './pages/UserLoginPage.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import TheLegendOFZeldaTotk from './pages/GameItemPages/TheLegendOfZelda-totk';
+import Cart from './pages/Cart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/UserLoginPage" element={<UserLoginPage />} />
-        <Route path="/TheLegendOFZeldaTotk" element={<TheLegendOFZeldaTotk />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="/UserLoginPage" element={<UserLoginPage />} />
+      <Route path="/TheLegendOFZeldaTotk" element={<TheLegendOFZeldaTotk />} />
+      <Route path="/Cart" element={<Cart />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

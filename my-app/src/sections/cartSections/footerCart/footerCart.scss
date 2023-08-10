@@ -1,0 +1,114 @@
+@use "src/styles/mixins" as mx;
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
+.footer-wrapper-cart {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  background-color: var(--dark-primary);
+  color: var(--white);
+  padding: 1.5rem 0 1.5rem 0;
+
+  @include mx.media(tablet) {
+    padding: 1rem 1rem;
+  }
+
+  @include mx.media(mobile) {
+    padding: 1rem 1rem;
+  }
+}
+
+.footer-content-cart {
+  max-width: 120rem;
+  align-self: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.links-cart {
+  display: flex;
+  justify-content: space-between;
+
+  @include mx.media(laptop) {
+    flex-direction: row;
+  }
+
+  @include mx.media(mobile) {
+    flex-direction: column;
+  }
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+
+  @include mx.media(laptop) {
+    display: none;
+  }
+
+  @include mx.media(mobile) {
+    display: none;
+  }
+}
+
+.logo-br {
+  display: block;
+  background-image: url(../../footer/src/logo3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 11rem;
+  height: 3rem;
+
+  @include mx.media(laptop-up) {
+    width: 22.5rem;
+    height: 6rem;
+  }
+}
+
+.information-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: arial,sans-serif;
+
+  @include mx.media(mobile) {
+    justify-content: center;
+  }
+}
+
+.copyright {
+  @include mx.media(mobile) {
+    display: none;
+  }
+}
+
+.lng-currency {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-shadow: 2px 1px var(--black);
+}
+
+.location-icon {
+  margin-right: 1rem;
+  mask-image: url(../../footer/src/icon-location.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+}
+
+.language {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid rgb(46, 43, 43);
+}

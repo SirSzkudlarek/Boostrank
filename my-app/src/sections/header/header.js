@@ -51,7 +51,7 @@ function Header() {
 
   return (
     <nav className='header-container'>
-        <a href='#' title='Home' className='logo-ig'></a>
+        <Link to='/' className='logo-ig'></Link>
 
         <div className='menu'>
           <div className='trendings'>
@@ -111,7 +111,7 @@ function Header() {
 
         <div className='header-right'>
           <div className='cart-app'>
-            <Link to='/UserLoginPage' className='cart-container'>
+            <Link to='/Cart' className='cart-container'>
               <div className='icon-cart icon-small-header'></div>
             </Link>
           </div>

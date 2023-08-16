@@ -2,26 +2,35 @@
 
 .header-container-cart {
   width: 100%;
-  padding: 0 1.5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  padding: 0.5rem 0;
   top: 0;
   z-index: 2;
   transition: .2s;
   background-color: var(--dark-primary);
-  height: 5.5rem;
-  margin-bottom: -73px;
+  height: 8rem;
+  margin-bottom: -7.3rem;
 
   @include mx.media(laptop-up) {
+    flex-direction: row;
     padding: 0 3rem;
     margin-bottom: -7.3rem;
     height: 8rem;
+    padding: 1rem 0;
   }
 
   .logo-ig {
     z-index: 2;
+    
+    @include mx.media(mobile) {
+      flex: 0 0 3.4rem;
+      width: 13.5rem;
+      height: 3.4rem;
+    }
   }
 
   .menu {
@@ -58,27 +67,61 @@
       color: var(--grey);
 
       .number {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         position: relative;
-        box-shadow: 0 0 0 .3rem var(--grey);
+        box-shadow: 0 0 0 .2rem var(--grey);
         border-radius: 10rem;
-        height: 2.6rem;
-        width: 2.6rem;
+        height: 2rem;
+        width: 2rem;
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin-right: 1.5rem;
+        justify-content: center;    
+        transform: scale(.8);
+        margin-right: .5rem;
+
+        @include mx.media(laptop-up) {
+          font-size: 1.5rem;
+          height: 2.6rem;
+          width: 2.6rem;
+          box-shadow: 0 0 0 .3rem var(--grey);
+          margin-right: 1.5rem;
+          transform: none;
+        }
       } 
+
+      .text {
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        @include mx.media(tablet-up) {
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+
+        @include mx.media(desktop-up) {
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+      }
+
+      .text:not(.last) {
+        margin-right: 1rem;
+      }
 
       .step {
         white-space: nowrap;
       }
 
       .spacer {
-        width: 12rem;
-        height: .3rem;
-        background-color: var(--grey);
-        margin: 0 0 0 1.5rem;
+        display: none;
+
+        @include mx.media(tablet-up) {
+          display: block;
+          width: 12rem;
+          height: .3rem;
+          background-color: var(--grey);
+          margin: 0 0 0 1.5rem;
+        }
       }
     }
 
@@ -122,12 +165,16 @@
 
     .login-container-header {
       font-weight: 700;
-      display: flex;
+      display: none;
       align-items: center;
       transition: .2s;
       opacity: 1;
       visibility: visible;
       margin-right: auto;
+
+      @include mx.media(mobile-up) {
+        display: flex;
+      }
 
       .user-header {
         transition: .2s;

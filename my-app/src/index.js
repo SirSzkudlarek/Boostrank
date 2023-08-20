@@ -16,7 +16,6 @@ root.render(
       <Route path="/UserLoginPage" element={<UserLoginPage />} />
       <Route path="/TheLegendOFZeldaTotk" element={<TheLegendOFZeldaTotk />} />
       <Route path="/Cart" element={<Cart />} />
-      <Route path="*" element={<Home />}/>
     </Routes>
   </BrowserRouter>
 );

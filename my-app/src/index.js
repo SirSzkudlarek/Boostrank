@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route index element={<Home />} />
+      <Route index path='/Boostrank' element={<Home />} />
       <Route path="/UserLoginPage" element={<UserLoginPage />} />
       <Route path="/TheLegendOFZeldaTotk" element={<TheLegendOFZeldaTotk />} />
       <Route path="/Cart" element={<Cart />} />

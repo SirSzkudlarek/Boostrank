@@ -51,7 +51,7 @@ function Header() {
 
   return (
     <nav className='header-container'>
-        <Link to='/' className='logo-ig'></Link>
+        <Link to='/Boostrank' className='logo-ig'></Link>
 
         <div className='menu'>
           <div className='trendings'>

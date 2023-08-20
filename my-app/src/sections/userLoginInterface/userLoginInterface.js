@@ -34,7 +34,7 @@ function UserLoginInterface() {
   return (
     <section className='login-interface-wrapper'>
       <div className='register'>
-        <Link to='/' className='logo-ig'></Link>
+        <Link to='/Boostrank' className='logo-ig'></Link>
         <h1 className='register-title'> Sign in to your TreeGames Account</h1>   
         <div className='panel-log-via'>
           <a className='log-via log-via-fb'>

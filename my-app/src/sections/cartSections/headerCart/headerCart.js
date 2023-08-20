@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 function CartHeader() {
   return (
     <nav className='header-container-cart'>
-      <Link to='/' className='logo-ig'></Link>  
+      <Link to='/Boostrank' className='logo-ig'></Link>  
       <div className='cart-progress'>
         <span className='step active'>
           <span className='number'>1</span>

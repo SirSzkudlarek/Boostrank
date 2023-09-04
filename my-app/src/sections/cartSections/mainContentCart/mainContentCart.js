@@ -345,8 +345,10 @@ function MainContentCart() {
                 <span className='choice'> or </span>
 
                 <Link to='/Boostrank' href='#' alt='back' className='back'>
+                  <span>
                   <div className='icon-arrow icon-xxs'></div>
                   Continue shopping
+                  </span>
                 </Link>
               </div>
             </div>

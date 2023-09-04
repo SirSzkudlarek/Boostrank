@@ -325,7 +325,15 @@
       }
 
       .seperator {
-        height: 6rem;
+        height: 3rem;
+
+        @include mx.media(mobile-up) {
+         height: 4.5rem;
+        }
+
+        @include mx.media(laptop-up) {
+         height: 6rem;
+        }
       }
 
       .wishlist {
@@ -795,5 +803,13 @@
 }
 
 .seperator-wide {
-  height: 8rem;
+  height: 3rem;
+
+  @include mx.media(mobile-up) {
+    height: 5rem;
+  }
+
+  @include mx.media(laptop-up) {
+    height: 8rem;
+  }
 }

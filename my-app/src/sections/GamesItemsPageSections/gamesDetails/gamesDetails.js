@@ -70,7 +70,7 @@ function GamesDetails(props) {
           </div>
         </div>
       </div>
-      <div className='seperator'></div>
+      <div className='seperator-details'></div>
     </section>
   );
 }

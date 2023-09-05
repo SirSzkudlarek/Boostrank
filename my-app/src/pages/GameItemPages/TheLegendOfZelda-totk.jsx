@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../sections/HomeSections/hero/hero.scss';
+import './TheLegendOfZelda-totk.scss';
 import LayoutDefault from '../../layouts/default/default';
 import ContentGamesItemsPage from '../../wrappers/contentGamesItemsPage';
 import GamesPanel from '../../sections/GamesItemsPageSections/gamesPanel/gamesPanel';
@@ -16,7 +16,7 @@ function TheLegendOFZeldaTotk(props) {
 
     return (
       <LayoutDefault>
-        <section className='highlights-wrapper'>
+        <section className='highlights-wrapper-games-items'>
           <div className='parallax'>
             <div className='header-top-gradient'></div>
             <img src = { data ? data.parallaxImage : "There should be parallax Image" } alt="header-parallax"></img>

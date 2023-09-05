@@ -2,15 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 .game-details-wrapper {
-  margin: -1.5rem;
   display: flex;
+  flex-direction: column;
+
+  @include mx.media(mobile-up) {
+    flex-direction: row;
+    margin: -1.5rem;
+  }
 
   .about {
-    width: calc(55% - 3rem);
-    flex: 0 0 61.6rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 1.5rem 0 1.5rem 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+
+    @include mx.media(mobile-up) {
+      flex: 0 0 61.6rem;
+      width: calc(55% - 3rem);
+      margin: 1.5rem 0 1.5rem 1.5rem;
+      padding: 0;
+    }
 
     .headline {
       justify-content: flex-start;
@@ -20,12 +31,20 @@
       width: 100%;
       max-width: 120rem;
       align-self: center;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       padding: 0;
 
+      @include mx.media(mobile-up) {
+        margin-bottom: 3rem;
+      }
+
       h2 {
-        font-size: 2.7rem;
+        font-size: 1.7rem;
         margin-bottom: 0;
+
+        @include mx.media(mobile-up) {
+          font-size: 2.7rem;
+        }
       }
     }
 
@@ -38,9 +57,14 @@
     }
 
     .readable {
-      line-height: 2.3rem;
-      font-size: 1.5rem;
+      line-height: 1.8rem;
+      font-size: 1.3rem;
       color: var(--grey);
+
+      @include mx.media(mobile-up) {
+        line-height: 2.3rem;
+        font-size: 1.5rem;
+      }
     }
 
     .show-more-description {
@@ -51,7 +75,14 @@
 
   .specifics {
     width: 100%;
-    margin: 1.5rem 1.5rem 1.5rem 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mx.media(mobile-up) {
+      display: block;
+      margin: 1.5rem 1.5rem 1.5rem 9rem;
+    }
 
     .socials-specifics {
       margin-bottom: 1.3rem;
@@ -66,25 +97,40 @@
 
         .note-container {
           flex: 0 0 4.5rem;
-          margin-right: 1.5rem;
+          margin-right: 1rem;
           font-weight: 700;
           font-size: 1.9rem;
           position: relative;
           display: flex;
 
+          @include mx.media(mobile-up) {
+            margin-right: 1.5rem;
+          }
+
           .rate {
-            height: 6.25rem;
-            width: 6.25rem;
-            flex: 0 0 6.25rem;
+            height: 5.25rem;
+            width: 5.25rem;
+            flex: 0 0 5.25rem;
+
+            @include mx.media(mobile-up) {
+              height: 6.25rem;
+              width: 6.25rem;
+              flex: 0 0 6.25rem;
+            }
           }
         }
 
         .based {
           display: flex;
           flex-direction: column;
-          line-height: 2.3rem;
+          line-height: 2rem;
           color: #999;
-          font-size: 1.5rem;
+          font-size: 1.3rem;
+
+          @include mx.media(mobile-up) {
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+          }
 
           span {
             white-space: nowrap;
@@ -102,7 +148,11 @@
       line-height: 2.3rem;
       color: var(--grey);
       display: table;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+
+      @include mx.media(mobile-up) {
+        font-size: 1.5rem;
+      }
 
       .table-row {
         display: table-row;
@@ -130,5 +180,14 @@
         }
       }
     }
+  }
+}
+
+.seperator-details {
+  display: none;
+  height: 3rem;
+
+  @include mx.media(mobile-up) {
+    display: block;
   }
 }

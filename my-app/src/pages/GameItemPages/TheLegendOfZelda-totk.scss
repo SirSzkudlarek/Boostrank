@@ -1,0 +1,101 @@
+@use "src/styles/mixins" as mx;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.highlights-wrapper-games-items {
+  padding: 15px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--basic);
+  display: none;
+  justify-content: center;
+  overflow: hidden;
+  height: 250px;
+  max-height: none;
+  min-height: 0;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 5.5rem;
+
+  @include mx.media(mobile-up) {
+    display: flex;
+  }
+
+  @include mx.media(tablet-up) {
+    height: 350px;
+    padding: 20px;
+    max-height: none;
+    min-height: 0;
+  }
+
+  @include mx.media(laptop-up) {
+    height: 400px;
+    min-height: 500px;
+    max-height: 620px;
+    padding: 30px;
+    margin-top: 0;
+  }
+
+  @include mx.media(desktop-up) {
+    height: 60vh;
+    min-height: 550px;
+  }
+}
+
+.highlights-wrapper-games-items:after {
+  content: "";
+  clip-path: polygon(50% 100%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  background: var(--basic);
+  height: 100px;
+  min-width: 1700px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  z-index: 1;
+
+  @include mx.media(desktop-up) {
+    bottom: -1px;
+    height: 120px;
+  }
+}
+
+.header-top-gradient {
+  background: linear-gradient(#000, transparent);
+  opacity: .6;
+  top: 0;
+  width: 100%;
+  height: 11rem;
+  z-index: 1;
+  content: "";
+  position: absolute;
+}
+
+.parallax {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.parallax img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-link {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  z-index: 1;
+
+  @include mx.media(laptop-up) {
+    top: 22%;
+  }
+}

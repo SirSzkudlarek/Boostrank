@@ -1,4 +1,5 @@
 import './gamesVisuals.scss';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import ss1 from './src/screenshoot1.png';
 import ss2 from './src/screenshoot2.png';
 import ss3 from './src/screenshoot3.png';
@@ -15,8 +16,8 @@ function GamesVisuals(props) {
   return (
     <section className='game-visuals-wrapper'>
       <div className='seperator'></div>
-      <div className='headline'>
-        <h2>Visuals</h2>
+      <div className='headlineGamesItemsPage'>
+        <h2 className='headline-visuals'>Visuals</h2>
       </div>
 
       <div className='vimeo'>
@@ -56,10 +57,90 @@ function GamesVisuals(props) {
         </div>
       </div> 
 
+      <div className='splide-wrapper-gamesItemsPage'>
+        <Splide options={{
+          breakpoints: {
+            0: {
+              fixedWidth: '20rem'
+            },
+
+            550: {
+              fixedWidth: '25rem'
+            },
+
+            768: {
+              fixedWidth: '30rem'
+            },
+          },
+          mediaQuery: 'min',
+          pagination: false,
+          arrows: false,
+          gap: '3rem',
+          type: 'loop',
+          padding: '5rem',
+          focus: "center",
+          autoplay: true,
+          interval: 6000,
+          speed: 1300,
+        }}
+          aria-label="game-slider"
+        >
+          <SplideSlide>
+            <div className='splide-screenshot-wrapper'>
+              <div className='splide-screenshot-cover'>
+                <picture>
+                  <img src={ data ? data.screenshoot1 : "ss" } className='splide-screenshot-img' alt='test'></img>
+                </picture>
+              </div>
+            </div>
+          </SplideSlide>
+
+          <SplideSlide>
+            <div className='splide-screenshot-wrapper'>
+              <div className='splide-screenshot-cover'>
+                <picture>
+                  <img src={ data ? data.screenshoot2 : "ss" } className='splide-screenshot-img' alt='test'></img>
+                </picture>
+              </div>
+            </div>
+          </SplideSlide>
+
+          <SplideSlide>
+            <div className='splide-screenshot-wrapper'>
+              <div className='splide-screenshot-cover'>
+                <picture>
+                  <img src={ data ? data.screenshoot3 : "ss" } className='splide-screenshot-img' alt='test'></img>
+                </picture>
+              </div>
+            </div>
+          </SplideSlide>
+
+          <SplideSlide>
+            <div className='splide-screenshot-wrapper'>
+              <div className='splide-screenshot-cover'>
+                <picture>
+                  <img src={ data ? data.screenshoot4 : "ss" } className='splide-screenshot-img' alt='test'></img>
+                </picture>
+              </div>
+            </div>
+          </SplideSlide>
+
+          <SplideSlide>
+            <div className='splide-screenshot-wrapper'>
+              <div className='splide-screenshot-cover'>
+                <picture>
+                  <img src={ data ? data.screenshoot5 : "ss" } className='splide-screenshot-img' alt='test'></img>
+                </picture>
+              </div>
+            </div>
+          </SplideSlide>
+        </Splide>
+      </div>
+
       <div className='seperator'></div>
 
       <div className='description'>
-          <h2 className='headline'>Description</h2>
+          <h2 className='headlineGamesItemsPage'>Description</h2>
         <div className='text'>
           <span>
             { data ? data.descriptionFirstApostrof : "First Apostrof" }

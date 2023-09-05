@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Boostrank/static/css/main.56e004ad.css",
-    "main.js": "/Boostrank/static/js/main.52e13630.js",
+    "main.css": "/Boostrank/static/css/main.abd4f7b8.css",
+    "main.js": "/Boostrank/static/js/main.b5f7f81a.js",
     "static/js/787.28cb0dcd.chunk.js": "/Boostrank/static/js/787.28cb0dcd.chunk.js",
     "static/media/screenshoot3.jpg": "/Boostrank/static/media/screenshoot3.eada10829c140e9d149a.jpg",
     "static/media/screenshoot2.jpg": "/Boostrank/static/media/screenshoot2.98707410303790933b8c.jpg",
@@ -49,12 +49,12 @@
     "static/media/xbox-icon.png": "/Boostrank/static/media/xbox-icon.d9639abd685bb63f2cc6.png",
     "static/media/rec1.jpg": "/Boostrank/static/media/rec1.8584bd7541f311409ce6.jpg",
     "index.html": "/Boostrank/index.html",
-    "main.56e004ad.css.map": "/Boostrank/static/css/main.56e004ad.css.map",
-    "main.52e13630.js.map": "/Boostrank/static/js/main.52e13630.js.map",
+    "main.abd4f7b8.css.map": "/Boostrank/static/css/main.abd4f7b8.css.map",
+    "main.b5f7f81a.js.map": "/Boostrank/static/js/main.b5f7f81a.js.map",
     "787.28cb0dcd.chunk.js.map": "/Boostrank/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56e004ad.css",
-    "static/js/main.52e13630.js"
+    "static/css/main.abd4f7b8.css",
+    "static/js/main.b5f7f81a.js"
   ]
 }

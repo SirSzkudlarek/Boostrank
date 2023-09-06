@@ -5,9 +5,16 @@
   display: flex;
   flex-direction: column;
 
-  @include mx.media(mobile-up) {
+  @include mx.media(tablet-up) {
     flex-direction: row;
+    max-width: 63.6rem;
+    align-self: center;
+  }
+
+  @include mx.media(laptop-up) {
     margin: -1.5rem;
+    max-width: initial;
+    align-self: flex-start;
   }
 
   .about {
@@ -16,12 +23,13 @@
     flex-direction: column;
     padding: 0 1.5rem 1.5rem 1.5rem;
 
-    @include mx.media(mobile-up) {
+    @include mx.media(laptop-up) {
       flex: 0 0 61.6rem;
       width: calc(55% - 3rem);
       margin: 1.5rem 0 1.5rem 1.5rem;
       padding: 0;
     }
+
 
     .headline {
       justify-content: flex-start;
@@ -34,7 +42,7 @@
       margin-bottom: 1rem;
       padding: 0;
 
-      @include mx.media(mobile-up) {
+      @include mx.media(laptop-up) {
         margin-bottom: 3rem;
       }
 
@@ -42,7 +50,7 @@
         font-size: 1.7rem;
         margin-bottom: 0;
 
-        @include mx.media(mobile-up) {
+        @include mx.media(laptop-up) {
           font-size: 2.7rem;
         }
       }
@@ -61,7 +69,7 @@
       font-size: 1.3rem;
       color: var(--grey);
 
-      @include mx.media(mobile-up) {
+      @include mx.media(laptop-up) {
         line-height: 2.3rem;
         font-size: 1.5rem;
       }
@@ -79,7 +87,11 @@
     flex-direction: column;
     align-items: center;
 
-    @include mx.media(mobile-up) {
+    @include mx.media(tablet-up) {
+      align-items: flex-start;
+    }
+
+    @include mx.media(laptop-up) {
       display: block;
       margin: 1.5rem 1.5rem 1.5rem 9rem;
     }
@@ -103,7 +115,7 @@
           position: relative;
           display: flex;
 
-          @include mx.media(mobile-up) {
+          @include mx.media(laptop-up) {
             margin-right: 1.5rem;
           }
 
@@ -112,7 +124,7 @@
             width: 5.25rem;
             flex: 0 0 5.25rem;
 
-            @include mx.media(mobile-up) {
+            @include mx.media(laptop-up) {
               height: 6.25rem;
               width: 6.25rem;
               flex: 0 0 6.25rem;
@@ -127,7 +139,7 @@
           color: #999;
           font-size: 1.3rem;
 
-          @include mx.media(mobile-up) {
+          @include mx.media(laptop-up) {
             font-size: 1.5rem;
             line-height: 2.3rem;
           }
@@ -150,7 +162,7 @@
       display: table;
       font-size: 1.3rem;
 
-      @include mx.media(mobile-up) {
+      @include mx.media(laptop-up) {
         font-size: 1.5rem;
       }
 
@@ -187,7 +199,7 @@
   display: none;
   height: 3rem;
 
-  @include mx.media(mobile-up) {
+  @include mx.media(laptop-up) {
     display: block;
   }
 }

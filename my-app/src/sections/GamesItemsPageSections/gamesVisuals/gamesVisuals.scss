@@ -7,13 +7,18 @@
 
   .headline-visuals {
     margin-left: 1.5rem;
+    max-width: 63.6rem;
+    width: 100%;
+    margin: 0 auto 1.5rem;
 
-    @include mx.media(mobile-up) {
-      margin-left: 0;
+    @include mx.media(laptop-up) {
+      margin: 0 0 1.5rem 0;
+      max-width: initial;
+      width: initial;
     }
   }
 
-  @include mx.media(mobile-up) {
+  @include mx.media(laptop-up) {
     margin-left: 0;
     margin-bottom: 3rem;
   }
@@ -24,7 +29,7 @@
   position: relative;
   margin-bottom: 1.5rem;
 
-  @include mx.media(mobile-up) {
+  @include mx.media(laptop-up) {
     margin-bottom: 3rem;
   }
 }
@@ -39,8 +44,14 @@
   width: calc(100% - 3rem);
   height: 100%;
 
-  @include mx.media(mobile-up) {
+  @include mx.media(tablet-up) {
+    max-width: 63.6rem;
     width: 100%;
+  }
+
+  @include mx.media(laptop-up) {
+    width: 100%;
+    max-width: initial;
     margin: 0;
   }
 }
@@ -49,7 +60,7 @@
   justify-content: center;
   display: none;
 
-  @include mx.media(mobile-up) {
+  @include mx.media(laptop-up) {
     margin: -1.5rem;
     display: flex;
   }
@@ -108,12 +119,26 @@
   width: 100%;
   padding: 0 1.5rem;
 
+  @include mx.media(tablet-up) {
+    max-width: 63.6rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+  }
+
+  @include mx.media(laptop-up) {
+    max-width: initial;
+    align-self: flex-start;
+    display: block;
+  }
+
   .text {
     line-height: 1.8rem;
     font-size: 1.3rem;
     color: var(--grey);
 
-    @include mx.media(mobile-up) {
+    @include mx.media(laptop-up) {
       font-size: 1.5rem;
       line-height: 2.3rem;
     }
@@ -127,7 +152,7 @@
   font-size: 1.7rem;
   margin-bottom: 1.5rem;
 
-  @include mx.media(mobile-up) {
+  @include mx.media(laptop-up) {
     margin-bottom: 2rem;
     font-size: 2.7rem;
   }
@@ -136,7 +161,7 @@
 .splide-wrapper-gamesItemsPage {
   width: 100vw;
 
-  @include mx.media(mobile-up) {
+  @include mx.media(laptop-up) {
     display: none;
   }
 }

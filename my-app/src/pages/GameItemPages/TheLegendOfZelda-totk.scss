@@ -18,7 +18,7 @@
   margin-bottom: 10px;
   margin-top: 5.5rem;
 
-  @include mx.media(mobile-up) {
+  @include mx.media(tablet-up) {
     display: flex;
   }
 

@@ -12,8 +12,15 @@
     height: 100%;
     flex-direction: column;
 
+    @include mx.media(tablet-up) {
+      max-width: 63.6rem;
+      align-self: center;
+    }
+
     @include mx.media(laptop-up) {
       flex-direction: row;
+      max-width: initial;
+      align-self: auto;
     }
 
     .game-graphic-presentation {
@@ -22,10 +29,14 @@
       position: relative;
       padding-top: 45%;
 
-      @include mx.media(mobile-up) {
+      @include mx.media(tablet-up) {
+        align-self: center;
+        padding-top: 0;
+      }
+
+      @include mx.media(laptop-up) {
         flex: 0 0 61.6rem;
         height: 35.3rem;
-        padding-top: 0;
       }
 
       .banner {
@@ -37,7 +48,7 @@
           object-fit: cover;
           max-width: 61.6rem;
 
-          @include mx.media(mobile-up) {
+          @include mx.media(tablet-up) {
             border-radius: 1.5rem;
           }
         }
@@ -59,7 +70,7 @@
       background-image: linear-gradient(1turn,var(--basic),rgba(12, 39, 1, 0) 70%);
       background-color: transparent;
 
-      @include mx.media(mobile-up) {
+      @include mx.media(laptop-up) {
         margin-left: 6rem;
         padding: 2rem 2rem 0;
       }
@@ -78,7 +89,7 @@
           font-weight: bold;
           font-family: 'Lato', sans-serif;
 
-          @include mx.media(mobile-up) {
+          @include mx.media(laptop-up) {
             font-size: 1.9rem;
             line-height: 2.5rem;
           }
@@ -98,7 +109,7 @@
         box-shadow: inset 0 0 0 1px hsl(0deg 0% 100% / 15%);
         width: calc(100% - 2rem);
 
-        @include mx.media(mobile-up) {
+        @include mx.media(laptop-up) {
           background-color: rgba(12, 39, 1, .3);
           border-radius: 10rem;
           box-shadow: none;
@@ -130,7 +141,7 @@
               -webkit-mask-position: center;
               background-color: #fff;
 
-              @include mx.media(mobile-up) {
+              @include mx.media(laptop-up) {
                 width: 3rem;
                 height: 3rem;
                 flex: 0 0 3rem;
@@ -161,7 +172,7 @@
               -webkit-mask-position: center;
               background-color: #fff;
 
-              @include mx.media(mobile-up) {
+              @include mx.media(laptop-up) {
                 width: 3rem;
                 height: 3rem;
                 flex: 0 0 3rem;
@@ -191,7 +202,7 @@
               -webkit-mask-position: center;
               background-color: #fff;
 
-              @include mx.media(mobile-up) {
+              @include mx.media(laptop-up) {
                 width: 3rem;
                 height: 3rem;
                 flex: 0 0 3rem;
@@ -221,7 +232,7 @@
               -webkit-mask-position: center;
               background-color: #fff;
 
-              @include mx.media(mobile-up) {
+              @include mx.media(laptop-up) {
                 width: 3rem;
                 height: 3rem;
                 flex: 0 0 3rem;
@@ -242,7 +253,7 @@
           .spacer {
             display: none;
 
-            @include mx.media(mobile-up) {
+            @include mx.media(laptop-up) {
               display: block;
             }
           }
@@ -252,7 +263,7 @@
           align-items: center;
           display: none;
 
-          @include mx.media(mobile-up) {
+          @include mx.media(laptop-up) {
             display: flex;
           }
         }
@@ -265,7 +276,7 @@
         font-size: 1.5rem;
         font-weight: normal;
 
-        @include mx.media(mobile-up) {
+        @include mx.media(laptop-up) {
           font-size: 1.8rem;
           font-weight: bold;
         }
@@ -295,7 +306,7 @@
         align-items: baseline;
         margin: .5rem 0;
 
-        @include mx.media(mobile-up) {
+        @include mx.media(laptop-up) {
           margin: auto 1rem 1rem 1rem;
         }
 
@@ -335,7 +346,7 @@
           margin-left: 1rem;
           color: var(--accent);
 
-          @include mx.media(mobile-up) {
+          @include mx.media(laptop-up) {
             font-size: 1.9rem;
           }
         }
@@ -349,7 +360,7 @@
           line-height: 3rem;
           align-items: baseline;
 
-          @include mx.media(mobile-up) {
+          @include mx.media(laptop-up) {
             font-size: 4rem;
           }
         }
@@ -380,7 +391,7 @@
           -webkit-appearance: none;
           transition: background-color .2s;
 
-          @include mx.media(mobile-up) {
+          @include mx.media(laptop-up) {
             font-size: 1.7rem;
             height: 5.6rem;
           }
@@ -421,7 +432,7 @@
     .game-panel-item.wide {
       min-height: 100%;
 
-      @include mx.media(mobile-up) {
+      @include mx.media(laptop-up) {
         height: 35.3rem
       }
     }
@@ -445,7 +456,7 @@
     min-width: 100%;
     height: 6%;
 
-    @include mx.media(mobile-up) {
+    @include mx.media(tablet-up) {
       display: none;
     }
   }
@@ -455,10 +466,6 @@
 
   @include mx.media(mobile-up) {
     height: 4rem;
-  }
-
-  @include mx.media(tablet-up) {
-    height: 5rem;
   }
 
   @include mx.media(laptop-up) {

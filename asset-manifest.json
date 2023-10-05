@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Boostrank/static/css/main.9bb0b711.css",
+    "main.css": "/Boostrank/static/css/main.60ad28e0.css",
     "main.js": "/Boostrank/static/js/main.b5f7f81a.js",
     "static/js/787.28cb0dcd.chunk.js": "/Boostrank/static/js/787.28cb0dcd.chunk.js",
     "static/media/screenshoot3.jpg": "/Boostrank/static/media/screenshoot3.eada10829c140e9d149a.jpg",
@@ -49,12 +49,12 @@
     "static/media/xbox-icon.png": "/Boostrank/static/media/xbox-icon.d9639abd685bb63f2cc6.png",
     "static/media/rec1.jpg": "/Boostrank/static/media/rec1.8584bd7541f311409ce6.jpg",
     "index.html": "/Boostrank/index.html",
-    "main.9bb0b711.css.map": "/Boostrank/static/css/main.9bb0b711.css.map",
+    "main.60ad28e0.css.map": "/Boostrank/static/css/main.60ad28e0.css.map",
     "main.b5f7f81a.js.map": "/Boostrank/static/js/main.b5f7f81a.js.map",
     "787.28cb0dcd.chunk.js.map": "/Boostrank/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bb0b711.css",
+    "static/css/main.60ad28e0.css",
     "static/js/main.b5f7f81a.js"
   ]
 }
